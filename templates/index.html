@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Simple E‑Commerce Demo</title>
+		<link rel="stylesheet" href="/static/css/styles.css" />
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container header-row">
+				<h1 class="logo">Mini Shop</h1>
+				<div class="cart-button" id="cart-toggle" title="View cart">
+					🛒 <span id="cart-count">0</span>
+				</div>
+			</div>
+		</header>
+
+		<main class="container main-area">
+			<section class="products" id="products" aria-label="Products">
+				<!-- Products rendered by JavaScript -->
+			</section>
+
+			<aside class="cart-panel" id="cart-panel" aria-label="Shopping cart">
+				<h2>Your Cart</h2>
+				<div id="cart-items" class="cart-items">
+					<p class="empty">Your cart is empty.</p>
+				</div>
+				<div class="cart-footer">
+					<div class="total">Total: <span id="cart-total">$0.00</span></div>
+					<button id="checkout" class="btn primary" disabled>Checkout</button>
+				</div>
+			</aside>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container">Simple static demo — no payments are processed.</div>
+		</footer>
+
+		<script defer src="/static/js/app.js"></script>
+	</body>
+</html>
